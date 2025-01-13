@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Template</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="resume">
+    <div class="left-section">
+      <div class="profile-pic">
+        <input type="file" id="profile-image" accept="image/*" onchange="updateImage()" />
+        <img id="profile-preview" src="" alt="Profile Picture">
+      </div>
+      <div class="contact">
+        <h3>Contact Me</h3>
+        <p contenteditable="true">+123-456-890</p>
+        <p contenteditable="true">mail@reallysite.com</p>
+        <p contenteditable="true">www.realsite.com</p>
+        <p contenteditable="true">123 Anywhere St, City</p>
+      </div>
+      <div class="about">
+        <h3>About Me</h3>
+        <p contenteditable="true">
+          Write a brief description about yourself here.
+          <br>
+          Any Certicication completeed, then mention it
+        </p>
+      </div>
+    </div>
+    <div class="right-section">
+      <h1 contenteditable="true">Your Name</h1>
+      <h2 contenteditable="true"></h2>
+      <div class="section">
+        <h3>Work Experience</h3>
+        <div contenteditable="true">
+          <h4>Job Position Here</h4>
+          <p>Company Name | Location</p>
+          <p>2019-2022</p>
+          <ul>
+            <li>Responsibility or achievement</li>
+            <li>Another responsibility</li>
+          </ul>
+        </div>
+        <div contenteditable="true">
+          <h4>Job Position Here</h4>
+          <p>Company Name | Location</p>
+          <p>2017-2019</p>
+          <ul>
+            <li>Responsibility or achievement</li>
+          </ul>
+        </div>
+      </div>
+      <div class="section">
+        <h3>Education</h3>
+        <div contenteditable="true">
+          <h4>Your University</h4>
+          <p>Course Name | 2017-2021</p>
+        </div>
+        <div contenteditable="true">
+          <h4>Your College</h4>
+          <p>Course Name | 2014-2017</p>
+        </div>
+      </div>
+      <div class="section">
+        <h3>Skills</h3>
+        <div class="skill">
+          <label for="uiux">UI/UX</label>
+          <input type="range" id="uiux" min="0" max="10" value="5" oninput="updateSkill('uiux-level', this.value)">
+          <span id="uiux-level">5</span>
+        </div>
+        <div class="skill">
+          <label for="visual-design">Visual Design</label>
+          <input type="range" id="visual-design" min="0" max="10" value="5" oninput="updateSkill('visual-design-level', this.value)">
+          <span id="visual-design-level">5</span>
+        </div>
+        <div class="skill">
+          <label for="wireframes">Wireframes</label>
+          <input type="range" id="wireframes" min="0" max="10" value="5" oninput="updateSkill('wireframes-level', this.value)">
+          <span id="wireframes-level">5</span>
+        </div>
+        <div class="skill">
+          <label for="ms-office">MS Office</label>
+          <input type="range" id="ms-office" min="0" max="10" value="5" oninput="updateSkill('ms-office-level', this.value)">
+          <span id="ms-office-level">5</span>
+        </div>
+        <div class="skill">
+          <label for="user-flows">User Flows</label>
+          <input type="range" id="user-flows" min="0" max="10" value="5" oninput="updateSkill('user-flows-level', this.value)">
+          <span id="user-flows-level">5</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
